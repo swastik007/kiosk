@@ -1,126 +1,85 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="src/output.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <style>
-  body {
-    font-family: "Poppins", sans-serif;
-  }
+    body {
+        font-family: "Poppins", sans-serif;
+    }
 </style>
-<body class="bg-red-50 text-gray-900 flex flex-col min-h-screen">
-  <!-- Main Wrapper -->
-  <div class="flex-grow">
-    <!-- Header -->
-    <section class="header py-8 border-b border-gray-300">
-      <div class="logo flex justify-center">
-        <img src="images/logo-dmart.png" class="h-12 w-auto" />
-      </div>
-    </section>
 
-    <!-- Content -->
-    <section class="wrapper mt-5 relative">
-      <div class="flex flex-col p-4">
-        <div class="flex flex-row justify-between">
-          <h5 class="font-semibold text-3xl">My Cart (5)</h5>
-          <button class="text-red-600">
+<body class="bg-red-50 text-gray-900 flex flex-col min-h-screen">
+    <!-- Main Wrapper -->
+    <div class="flex-grow">
+        <!-- Header -->
+        <section class="header py-8 border-b border-gray-300">
+            <div class="logo flex justify-center">
+                <img src="images/logo-dmart.png" class="h-12 w-auto" />
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="wrapper mt-5 relative">
+            <div class="flex flex-col p-4">
+                <div class="flex flex-row justify-between">
+                    <h5 class="font-semibold text-3xl">My Cart (5)</h5>
+                    <button class="text-red-600">
               
             <svg class="fill-red-600 size-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 30" x="0px" y="0px">
               <path d="M17.707,7.707,13.4141,12l4.2929,4.293a1,1,0,1,1-1.414,1.414L12,13.4141,7.707,17.707a1,1,0,0,1-1.414-1.414L10.5859,12,6.293,7.707A1,1,0,0,1,7.707,6.293L12,10.5859,16.293,6.293a1,1,0,1,1,1.414,1.414Z"/>
 
             </svg>
           </button>
-        </div>
-         <!-- Table Container -->
-        <div class="flex flex-col">
-          <!-- Table Header -->
-          <div class="grid grid-cols-6 bg-transparent font-normal text-gray-700 pb-1">
-            <div  class="text-center">Item</div>
-            <div class="col-span-2 text-center">Name</div>
-            <div class="text-center">Price</div>
-            <div class="text-center">Quantity</div>
-            <div class="text-center">Subtotal</div>
-          </div>
+                </div>
 
-          <!-- Table Rows -->
-          <div class="border-dashed border-2 border-purple-900/20 rounded-md p-2">
-            <!-- Row 1 -->
-            <div class="grid grid-cols-6 py-2 px-4 text-gray-900 font-bold shadow-lg border border-gray-200 rounded-md place-items-center">
-              <div class="flex justify-start w-full">
-                <img class="size-12 object-contain ml-0 mr-auto" src="images/burger.png" />
-              </div>
-              <div class="col-span-2 text-left">Chicken Burger</div>
-              <div  class="text-center">$ 400</div>
-              <div  class="text-center">1</div>
-              <div  class="text-center">$ 400</div>
             </div>
-            <!-- Row 2 -->
-            <div class="grid grid-cols-6 py-2 px-4 text-gray-900 font-bold shadow-lg border border-gray-200 rounded-md place-items-center">
-              <div class="flex justify-start w-full">
-                <img class="size-12 object-contain ml-0 mr-auto" src="images/burger.png" />
-              </div>
-              <div class="col-span-2 text-left">Chicken Burger</div>
-              <div  class="text-center">$ 400</div>
-              <div  class="text-center">1</div>
-              <div  class="text-center">$ 400</div>
-            </div>
-            <!-- Add more rows as needed -->
-            <div class="grid grid-cols-6 py-2 px-4 text-gray-900 font-bold shadow-lg border border-gray-200 rounded-md place-items-center">
-              <div class="flex justify-start w-full">
-                <img class="size-12 object-contain ml-0 mr-auto" src="images/burger.png" />
-              </div>
-              <div class="col-span-2 text-left">Chicken Burger</div>
-              <div  class="text-center">$ 400</div>
-              <div  class="text-center">1</div>
-              <div  class="text-center">$ 400</div>
-            </div>
-          </div>
-        </div>        
-      </div>
-      
-      <div class="absolute top-5 w-screen">
-        <div class="bg-white pb-6 mx-auto max-w-[90vw]">
-          <h5 class="font-semibold text-5xl border-b border-gray-300 px-4 py-8 pl-4">Confirm Payment</h5>
-        <div class="flex flex-col my-2 gap-y-4 p-4">
-          <button class="bg-[#0000FE] text-white font-medium py-12 px-6 text-xl rounded-2xl flex flex-row justify-between items-center">
-            <span class="font-semibold text-5xl pl-5">Pay with Card</span>
-            <img class="size-32" src="images/credit-card.png" />
+
+            <div class="w-screen">
+                <div class="bg-white pb-6 mx-auto max-w-[90vw]">
+                    <h5 class="font-semibold text-5xl border-b border-gray-300 px-4 py-8 pl-4">Confirm Payment</h5>
+                    <div class="flex flex-col my-2 gap-y-4 p-4">
+                        <button class="bg-[#0000FE] text-white font-medium py-12 px-6 text-xl rounded-2xl flex flex-row justify-between items-center">
+            <span class="font-semibold text-4xl pl-5">Pay with Card</span>
+            <img class="size-28" src="images/credit-card.png" />
           </button>
-          <button class="bg-[#21A422] text-white font-medium py-12 px-6 text-xl rounded-2xl flex flex-row justify-between items-center">
-            <span class="font-semibold text-5xl pl-5">Pay with UPI</span>
-            <img class="size-32" src="images/qr-img.png" />
+                        <button class="bg-[#21A422] text-white font-medium py-12 px-6 text-xl rounded-2xl flex flex-row justify-between items-center">
+            <span class="font-semibold text-4xl pl-5">Pay with UPI</span>
+            <img class="size-28" src="images/qr-img.png" />
             </button>
-          <button class="bg-[#FE0000] text-white font-medium py-12 px-6 text-xl rounded-2xl flex flex-row justify-between items-center">
+                        <button class="bg-[#FE0000] text-white font-medium py-12 px-6 text-xl rounded-2xl flex flex-row justify-between items-center">
 
-            <span class="font-semibold text-5xl pl-5">Cancel this order</span>
+            <span class="font-semibold text-4xl pl-5">Cancel this order</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="size-32 fill-white" viewBox="0 0 24 24"><path d="M9.172 16.242 12 13.414l2.828 2.828 1.414-1.414L13.414 12l2.828-2.828-1.414-1.414L12 10.586 9.172 7.758 7.758 9.172 10.586 12l-2.828 2.828z"></path><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8z"></path></svg>
           </button>
-        </div>
-        </div>
-        
-      </div>
-    </section>
-  </div>
+                    </div>
+                </div>
 
-  <!-- Footer -->
-  <section class="footer p-2 sticky bottom-0 bg-red-50 opacity-40">
-    <div class="flex justify-end border-y-2 border-green-600 py-2 pr-4">
-      <h6 class="text-2xl font-semibold">Total: <span class="text-yellow-500">$ 800</span></h6>
+            </div>
+        </section>
     </div>
-    <div class="flex justify-between py-4 gap-x-4">
-      <button class="bg-[#fe0000] rounded-lg font-semibold text-white py-4 text-2xl px-6">
+
+    <!-- Footer -->
+    <section class="footer p-2 sticky bottom-0 bg-red-50">
+        <div class="flex justify-end border-y-2 border-green-600 py-2 pr-4">
+            <h6 class="text-2xl font-semibold">Total: <span class="text-yellow-500">$ 800</span></h6>
+        </div>
+        <div class="flex justify-between py-4 gap-x-4">
+            <button class="bg-[#fe0000] rounded-lg font-semibold text-white py-4 text-2xl px-6">
         <span>Back</span>
       </button>
-      
-      <button class="bg-[#21a422] rounded-lg font-semibold text-white py-4 text-2xl px-6">
+
+            <button class="bg-[#21a422] rounded-lg font-semibold text-white py-4 text-2xl px-6">
         <span>Payment</span>
       </button>
-    </div>
-  </section>
+        </div>
+    </section>
 </body>
+
 </html>
