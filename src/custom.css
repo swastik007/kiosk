@@ -1,0 +1,26 @@
+section.slide .slider-container .drt-control {
+  padding: 15px;
+}
+
+@media (min-width: 1080px) and (max-width: 1080px) and (min-height: 1793px) and (max-height: 1793px) {
+  section.slide .slider-container .drt-control {
+    padding: 30px;
+  }
+}
+
+section.slide .slider-container .slider-controls {
+  padding-bottom: 40px;
+}
+
+section.slide .slider-container .slider-controls li {
+  width: 15px;
+  height: 15px;
+}
+
+@media (min-width: 1080px) and (max-width: 1080px) and (min-height: 1793px) and (max-height: 1793px) {
+  section.slide .slider-container .slider-controls li {
+    height: 40px;
+    width: 70px;
+  }
+}
+/*# sourceMappingURL=custom.css.map */

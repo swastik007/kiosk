@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+</style>
+
+<body id="mainDiv" class="bg-red-50 text-gray-900 flex flex-col min-h-screen">
+    <header class="sticky top-0 z-10 bg-white shadow-md h-fit">
+        <section class="header py-6 border-b border-gray-300">
+            <div class="logo flex justify-center">
+                <img src="images/logo-dmart.png" class="h-8 kiosk:h-12 w-auto" alt="Logo">
+            </div>
+        </section>
+        <section class="banner-area py-1 block lg:hidden kiosk:block">
+            <div class="grid grid-cols-1 px-4">
+                <div class=" h-[170px] kiosk:h-[240px]">
+                    <img src="images/gifs/gif1.gif" class="w-full h-full object-cover object-center" alt="Banner">
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Menu Page -->
+    <div class="flex flex-col lg:max-w-6xl lg:mx-auto lg:grid lg:grid-cols-12 kiosk:flex kiosk:flex-col">
+        <div class="flex kiosk:flex-1 kiosk:overflow-hidden pt-4 h-[66vh] lg:h-full kiosk:h-[72vh] overflow-y-hidden lg:overflow-auto kiosk:overflow-y-hidden lg:col-span-8 xl:col-span-9" id="productMainPage">
+            <main class="wrapper-div h-[62vh] lg:h-fit kiosk:max-h-[72vh] overflow-y-auto  kiosk:p-2 m-2 w-full">
+                <div class="bg-white w-full pointer-events-auto modal-style rounded-md overflow-y-auto mx-auto">
+                    <div class="p-4 flex items-center justify-between space-x-2 border-b border-gray-lighter">
+                        <h5 class="font-semibold text-xl kiosk:text-4xl mb-0">
+                            My Cart (5)
+                        </h5>
+                        <a href="javascript:void(0);" class="block" data-close="">
+                            <svg class="stroke-current text-red-600 size-10" viewBox="0 0 24 24" stroke-width="4" stroke="#6c7893" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <path d="M18 6 6 18M6 6l12 12"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Modal Content Goes Here -->
+                    <div class="flex flex-col p-4">
+                        <div class="flex flex-row justify-between mb-4">
+                            <h5 class="font-semibold text-xl kiosk:text-3xl text-center">Simply cheese Pizza</h5>
+                            <button class="text-red-600 text-xl kiosk:text-3xl backBtn">
+                                <svg class="fill-red-600 size-10 kiosk:size-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 30" x="0px" y="0px">
+                                    <path d="M17.707,7.707,13.4141,12l4.2929,4.293a1,1,0,1,1-1.414,1.414L12,13.4141,7.707,17.707a1,1,0,0,1-1.414-1.414L10.5859,12,6.293,7.707A1,1,0,0,1,7.707,6.293L12,10.5859,16.293,6.293a1,1,0,1,1,1.414,1.414Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-col mx-auto mb-5">
+                            <div class="w-32 h-32 kiosk:w-40 kiosk:h-40 mx-auto">
+                                <img class="w-full h-full object-contain mx-auto" src="images/burger.png">
+                            </div>
+                            <span class="text-green-600 font-semibold flex flex-row justify-center text-2xl kiosk:text-4xl items-end text-center mb-3">
+                                ₹. 99.00
+                            </span>
+                            <div class="flex flex-row text-4xl items-center gap-x-4">
+                                <button class="bg-red-600 rounded-lg text-white flex justify-center items-center p-1 kiosk:p-2 ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" class="mt-1 size-6 kiosk:size-8 fill-white text-white">
+                                        <rect x="7" y="40.667" width="86" height="16.487"></rect>
+                                         </svg>  
+                                         
+                                </button>
+                                <span class="text-yellow-600 text-2xl kiosk:text-4xl font-medium mx-4">2</span>
+                                <button class="bg-green-600 rounded-lg text-white flex justify-center items-center p-1 kiosk:p-2 ">
+                                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 size-6 kiosk:size-8 fill-white text-white" viewBox="0 0 100 125">
+                                        <polygon points="93,40.667 58.244,40.667 58.244,5.911 41.757,5.911 41.757,40.667 7,40.667 7,57.154 41.757,57.154 41.757,91.91   58.244,91.91 58.244,57.154 93,57.154 "></polygon>
+                                    </svg>                              
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div class="border border-green-600 rounded-lg grid grid-cols-2 p-4 gap-x-6">
+                            <div class="modifiers border-r border-gray-700 pr-5">
+                                <h5 class="font-semibold text-xl kiosk:text-3xl mb-4">Modifiers</h5>
+                                <input type="hidden">
+                                <div class="mod-item flex flex-row justify-between mb-2">
+                                    <div class="flex flex-row justify-start items-center">
+                                        <span class="text-gray-700 text-lg kiosk:text-2xl font-bold mr-2 mt-1">1.</span>
+                                        <div class="flex flex-col justify-start items-start">
+                                            <h6 class="font-semibold text-lg kiosk:text-2xl leading-tight">Mozzarella Cheese</h6>
+                                            <span class="text-green-600 font-semibold flex flex-row justify-center text-lg kiosk:text-2xl items-end text-center mb-3">
+                                                        ₹. 25.00
+                                                    </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row text-4xl items-center gap-x-4">
+                                        <button class="bg-red-600 rounded-lg text-white flex justify-center items-center p-1 kiosk:p-2 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" class="mt-1 size-6 kiosk:size-8 fill-white text-white">
+                                                <rect x="7" y="40.667" width="86" height="16.487"></rect>
+                                                 </svg>  
+                                                 
+                                        </button>
+                                        <span class="text-yellow-600 text-2xl kiosk:text-4xl font-medium mx-4">2</span>
+                                        <button class="bg-green-600 rounded-lg text-white flex justify-center items-center p-1 kiosk:p-2 ">
+                                                            
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 size-6 kiosk:size-8 fill-white text-white" viewBox="0 0 100 125">
+                                                <polygon points="93,40.667 58.244,40.667 58.244,5.911 41.757,5.911 41.757,40.667 7,40.667 7,57.154 41.757,57.154 41.757,91.91   58.244,91.91 58.244,57.154 93,57.154 "></polygon>
+                                            </svg>                              
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="ingredients">
+                                <h5 class="font-semibold text-xl kiosk:text-3xl mb-6">Ingredients</h5>
+                                <div class="ingredient-item flex flex-row justify-between mb-2 border-b border-gray-300 pb-4 IngredentsDiv">
+                                    <div class="flex flex-row justify-start">
+                                        <span class="text-gray-700 text-lg kiosk:text-2xl font-bold mr-2 ">1.</span>
+                                        <div class="flex flex-col justify-start items-start">
+                                            <h6 class="font-semibold text-lg kiosk:text-2xl" id="text-f3e731bc-24e0-ec11-80ec-f44d30d18698">Pizza Tomato Sauce</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row text-4xl items-center gap-x-2 kiosk:gap-x-4">
+                                        <button class="bg-red-600 rounded-lg text-white flex justify-center items-center p-1 kiosk:p-2 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" class="mt-1 size-6 kiosk:size-8 fill-white text-white">
+                                                <rect x="7" y="40.667" width="86" height="16.487"></rect>
+                                                 </svg>  
+                                                 
+                                        </button>
+                                        <span class="text-yellow-600 text-2xl kiosk:text-4xl font-medium mx-4">2</span>
+                                        <button class="bg-green-600 rounded-lg text-white flex justify-center items-center p-1 kiosk:p-2 ">
+                                                            
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 size-6 kiosk:size-8 fill-white text-white" viewBox="0 0 100 125">
+                                                <polygon points="93,40.667 58.244,40.667 58.244,5.911 41.757,5.911 41.757,40.667 7,40.667 7,57.154 41.757,57.154 41.757,91.91   58.244,91.91 58.244,57.154 93,57.154 "></polygon>
+                                            </svg>                              
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="ingredient-item flex flex-row justify-between mb-2 border-b border-gray-300 pb-4 IngredentsDiv" id="div-fae731bc-24e0-ec11-80ec-f44d30d18698" data-include-old="true" data-include="true" data-record="modifier" data-qty="0" data-id="fae731bc-24e0-ec11-80ec-f44d30d18698"
+                                    data-name="Mozzarella Cheese" data-price="25.00" data-imagepath="Content/productImages/400032530.jpg">
+                                    <div class="flex flex-row justify-start">
+                                        <span class="text-gray-700 text-lg kiosk:text-2xl font-bold mr-2 ">2.</span>
+                                        <div class="flex flex-col justify-start items-start">
+                                            <h6 class="font-semibold text-lg kiosk:text-2xl" id="text-fae731bc-24e0-ec11-80ec-f44d30d18698">Mozzarella Cheese</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row text-4xl items-center gap-x-2 kiosk:gap-x-4">
+                                        <button class="bg-red-600 rounded-lg text-white flex justify-center items-center p-1 kiosk:p-2 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" class="mt-1 size-6 kiosk:size-8 fill-white text-white">
+                                                <rect x="7" y="40.667" width="86" height="16.487"></rect>
+                                                 </svg>  
+                                                 
+                                        </button>
+                                        <span class="text-yellow-600 text-2xl kiosk:text-4xl font-medium mx-4">2</span>
+                                        <button class="bg-green-600 rounded-lg text-white flex justify-center items-center p-1 kiosk:p-2 ">
+                                                            
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 size-6 kiosk:size-8 fill-white text-white" viewBox="0 0 100 125">
+                                                <polygon points="93,40.667 58.244,40.667 58.244,5.911 41.757,5.911 41.757,40.667 7,40.667 7,57.154 41.757,57.154 41.757,91.91   58.244,91.91 58.244,57.154 93,57.154 "></polygon>
+                                            </svg>                              
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="flex flex-col w-full lg:px-6 kiosk:max-w-full kiosk:w-full lg:col-span-4 lg:max-w-[320px] xl:col-span-3 ml-auto mr-0">
+
+            <footer class="border border-green-500 bg-red-50 lg:border-gray-100 lg:bg-slate-200 kiosk:border-green-500 kiosk:bg-red-50 rounded-none
+             lg:rounded-xl kiosk:rounded-none shadow-lg sticky lg:static lg:top-0 lg:top-auto bottom-0 text-white py-2 kiosk:py-4 lg:mt-6 mt-auto px-2 kiosk:px-4">
+                <div class="flex justify-end lg:justify-center kiosk:justify-end border-y-2 border-green-600 lg:border-y-0 kiosk:border-y-2 kiosk:border-green-600 py-1 kiosk:py-3 pr-4 mb-3 hideProduct" id="totalItemSection">
+                    <h6 class="text-lg kiosk:text-4xl text-gray-800 font-semibold flex flex-row lg:flex-col kiosk:flex-row items-center">Total:
+                        <span class="text-green-600 kiosk:text-yellow-500 text-2xl kiosk:text-5xl mr-2 lg:mr-auto kiosk:mr-2" id="checkoutTotal">435</span></h6>
+                </div>
+                <div class="flex lg:flex-col kiosk:flex-row kiosk:flex-wrap justify-between py-2 kiosk:py-4 gap-x-4 lg:gap-y-3">
+                    <a href="#" class="bg-[#fe0000] flex justify-center rounded-xl  font-semibold text-white py-2 kiosk:py-4 text-base kiosk:text-5xl px-2 kiosk:px-6 backBtn hideProduct" id="backBtnFooter">
+                        <span>Back</span>
+                    </a>
+                    <button class="text-white flex flex-grow bg-[#21a422] rounded-xl font-semibold py-2 kiosk:py-4 text-base kiosk:text-5xl px-2 kiosk:px-6 hideProduct" id="itemsSelectedBtn">
+                        <div class="flex flex-col flex-grow">
+                            <span class="totalItems">0 item(s)</span>
+                        </div>
+                        <span></span>
+                    </button>
+
+                </div>
+            </footer>
+            <section class="banner-area py-1 hidden lg:block kiosk:hidden pt-6">
+                <div class="grid grid-cols-1 px-0">
+                    <div class="w-full h-[240px] rounded-xl">
+                        <img src="images/gifs/kfc-gif.gif" class="w-full h-full object-cover object-center rounded-xl" alt="Banner">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
